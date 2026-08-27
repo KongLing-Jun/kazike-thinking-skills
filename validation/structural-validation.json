@@ -1,0 +1,115 @@
+{
+  "skill_count": 12,
+  "all_passed": true,
+  "checks": "bundled quick_validate plus nonempty fields, directory identity, metadata, references, source coverage",
+  "results": [
+    {
+      "skill": "claim-fact-checking",
+      "source_prompt": "05",
+      "lines": 39,
+      "references": 0,
+      "quick_validate": "Skill is valid!",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "skill": "cross-domain-transfer",
+      "source_prompt": "08",
+      "lines": 40,
+      "references": 0,
+      "quick_validate": "Skill is valid!",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "skill": "first-principles-solving",
+      "source_prompt": "07",
+      "lines": 34,
+      "references": 0,
+      "quick_validate": "Skill is valid!",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "skill": "hidden-strengths-discovery",
+      "source_prompt": "11a-11b",
+      "lines": 43,
+      "references": 1,
+      "quick_validate": "Skill is valid!",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "skill": "life-design-prototyping",
+      "source_prompt": "12a-12d",
+      "lines": 52,
+      "references": 2,
+      "quick_validate": "Skill is valid!",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "skill": "longitudinal-comparative-research",
+      "source_prompt": "04",
+      "lines": 41,
+      "references": 0,
+      "quick_validate": "Skill is valid!",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "skill": "minimum-experiment-design",
+      "source_prompt": "10",
+      "lines": 44,
+      "references": 0,
+      "quick_validate": "Skill is valid!",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "skill": "multi-perspective-consultation",
+      "source_prompt": "06",
+      "lines": 39,
+      "references": 0,
+      "quick_validate": "Skill is valid!",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "skill": "reverse-engineering-examples",
+      "source_prompt": "03",
+      "lines": 39,
+      "references": 0,
+      "quick_validate": "Skill is valid!",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "skill": "socratic-questioning",
+      "source_prompt": "01",
+      "lines": 39,
+      "references": 0,
+      "quick_validate": "Skill is valid!",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "skill": "two-layer-explaining",
+      "source_prompt": "02",
+      "lines": 37,
+      "references": 0,
+      "quick_validate": "Skill is valid!",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "skill": "two-sided-steelmanning",
+      "source_prompt": "09",
+      "lines": 41,
+      "references": 0,
+      "quick_validate": "Skill is valid!",
+      "passed": true,
+      "errors": []
+    }
+  ]
+}
