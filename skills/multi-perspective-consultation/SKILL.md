@@ -2,8 +2,6 @@
 name: multi-perspective-consultation
 description: 为复杂问题选择三个互补专业视角，分别分析并相互质疑，综合成有适用条件、退出条件和首步行动的方案。用于“专家会诊”“多角度审视这个方案”“让不同专业观点交叉检查”等请求。
 metadata:
-  source: "https://www.douyin.com/user/self?modal_id=7676403117654641926"
-  source-prompt: "06"
   language: "zh-CN"
 ---
 

@@ -2,8 +2,6 @@
 name: first-principles-solving
 description: 将卡住的问题拆为基本事实、未经验证的惯例、真实目标与现实约束，从这些要素重新推导可行路径。用于“第一性原理分析”“别继续打补丁”“从本质重新设计解法”等请求。
 metadata:
-  source: "https://www.douyin.com/user/self?modal_id=7676403117654641926"
-  source-prompt: "07"
   language: "zh-CN"
 ---
 

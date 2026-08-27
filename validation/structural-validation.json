@@ -1,115 +1,43 @@
 {
+  "schema_version": 1,
+  "generated_at": "2026-08-27T18:03:58.480338+00:00",
+  "validator": {
+    "version": "1.0.0",
+    "sha256": "3ada0cc2409288e7fb68cbb021a8b8bc7410e51a063360292126688201727fea"
+  },
+  "runtime": {
+    "python": "3.14.7",
+    "pyyaml": "6.0.3"
+  },
+  "files": {
+    "README.md": "2d2381ec829696fc5bbd4e1367db598b2313fabe7871ae3db8eaae17ab672321",
+    "skills/claim-fact-checking/SKILL.md": "d6ad9f796b9102de692605493296e9d662341442369ef72d534ca566c9de2bc3",
+    "skills/cross-domain-transfer/SKILL.md": "212feda7eb0549f6b9e1aaa8e355d2d1c8e069255d6305299c8c5a9d73e6c140",
+    "skills/first-principles-solving/SKILL.md": "37657216a6e5811dfb7026309977ca9018549622410d5b68339d32b76c4cd8c3",
+    "skills/hidden-strengths-discovery/references/profile-framework.md": "9fe790baa9dcb4c65761d380b025c5601cf94d48ff10a331eecd610995462b60",
+    "skills/hidden-strengths-discovery/SKILL.md": "0fb24501fc3f5b7421140cf430396c2a6740cf6a58fe6f3ce74464ceb8dba951",
+    "skills/life-design-prototyping/references/blueprint-framework.md": "124680e1dfea14e63e09ef374af44ab6b60643dd183c16b590b6f0e224b11d21",
+    "skills/life-design-prototyping/references/interview-flow.md": "be68b63a429616b2e32c6392def66b934ff09291de1ad8b24c18aeb1d2d73f7f",
+    "skills/life-design-prototyping/SKILL.md": "128dfcede14df3ba7a4dafe45341100014eff016ce197f37b57bd533acf07f3f",
+    "skills/longitudinal-comparative-research/SKILL.md": "3902dd673b12e1023c56591526574645d512c6b52bf3030c7e15579faf98fcf2",
+    "skills/minimum-experiment-design/SKILL.md": "f13b8d6f5b84ccce47fd081ca762ff2089c8d8a692217fdd4c3f89fc2c7ef17f",
+    "skills/multi-perspective-consultation/SKILL.md": "bd9781c6bab409f3abfd4c892cceedf6ab28f8f67c587d8f23866cf22c184ebb",
+    "skills/reverse-engineering-examples/SKILL.md": "8db8420deaf55317b985a9c6ef77e7d211d58f624b68e72330896cf37fd32421",
+    "skills/socratic-questioning/SKILL.md": "6ed622b634b6579fd480b89fea3644b6d03e4ce0131ee14d8400c899cea2772a",
+    "skills/two-layer-explaining/SKILL.md": "36359ba50b4464b879e281a6d989bc19a48280b1dedc1fb4d7d4bf5c748cdb0d",
+    "skills/two-sided-steelmanning/SKILL.md": "61cfb47dfe678836fa53ffb07c24537173d407e16fd8f4a0f1d05ae5a922d5b4",
+    "validation/analysis-forward-test.md": "c96da44f84e53fbba36df616eb35fc6f1d19a94e9682886b837682e91da8d685",
+    "validation/behavior-cases.json": "2367ddd0093252790a3b1dda2aa4f56a70b85ec43523c26470f2e28c8a58ae35",
+    "validation/interactive-forward-test.md": "2d1dd0b0aca47d33b2c6db7c5ff7f881c47f5e684dbbf54725f90e175c4843a2",
+    "validation/README.md": "a4ebadb556214013562e3c77ac99978a6d93f762c47c4614d0178e1240ab63ad",
+    "使用说明.md": "aafead1925e4d69d24b50a17a63928296f3820dbeded2a7bd809f9c2da1ba371",
+    "内容提炼与来源.md": "a42754935a6293549621bf9ee69fc1b37130bf907db731f704e19111972c6f19",
+    "验证报告.md": "3319062c28e8087e7e79eb15e87784391d49eca2f424a89d949cdd1dc94bd3fa"
+  },
   "skill_count": 12,
-  "all_passed": true,
-  "checks": "bundled quick_validate plus nonempty fields, directory identity, metadata, references, source coverage",
-  "results": [
-    {
-      "skill": "claim-fact-checking",
-      "source_prompt": "05",
-      "lines": 39,
-      "references": 0,
-      "quick_validate": "Skill is valid!",
-      "passed": true,
-      "errors": []
-    },
-    {
-      "skill": "cross-domain-transfer",
-      "source_prompt": "08",
-      "lines": 40,
-      "references": 0,
-      "quick_validate": "Skill is valid!",
-      "passed": true,
-      "errors": []
-    },
-    {
-      "skill": "first-principles-solving",
-      "source_prompt": "07",
-      "lines": 34,
-      "references": 0,
-      "quick_validate": "Skill is valid!",
-      "passed": true,
-      "errors": []
-    },
-    {
-      "skill": "hidden-strengths-discovery",
-      "source_prompt": "11a-11b",
-      "lines": 43,
-      "references": 1,
-      "quick_validate": "Skill is valid!",
-      "passed": true,
-      "errors": []
-    },
-    {
-      "skill": "life-design-prototyping",
-      "source_prompt": "12a-12d",
-      "lines": 52,
-      "references": 2,
-      "quick_validate": "Skill is valid!",
-      "passed": true,
-      "errors": []
-    },
-    {
-      "skill": "longitudinal-comparative-research",
-      "source_prompt": "04",
-      "lines": 41,
-      "references": 0,
-      "quick_validate": "Skill is valid!",
-      "passed": true,
-      "errors": []
-    },
-    {
-      "skill": "minimum-experiment-design",
-      "source_prompt": "10",
-      "lines": 44,
-      "references": 0,
-      "quick_validate": "Skill is valid!",
-      "passed": true,
-      "errors": []
-    },
-    {
-      "skill": "multi-perspective-consultation",
-      "source_prompt": "06",
-      "lines": 39,
-      "references": 0,
-      "quick_validate": "Skill is valid!",
-      "passed": true,
-      "errors": []
-    },
-    {
-      "skill": "reverse-engineering-examples",
-      "source_prompt": "03",
-      "lines": 39,
-      "references": 0,
-      "quick_validate": "Skill is valid!",
-      "passed": true,
-      "errors": []
-    },
-    {
-      "skill": "socratic-questioning",
-      "source_prompt": "01",
-      "lines": 39,
-      "references": 0,
-      "quick_validate": "Skill is valid!",
-      "passed": true,
-      "errors": []
-    },
-    {
-      "skill": "two-layer-explaining",
-      "source_prompt": "02",
-      "lines": 37,
-      "references": 0,
-      "quick_validate": "Skill is valid!",
-      "passed": true,
-      "errors": []
-    },
-    {
-      "skill": "two-sided-steelmanning",
-      "source_prompt": "09",
-      "lines": 41,
-      "references": 0,
-      "quick_validate": "Skill is valid!",
-      "passed": true,
-      "errors": []
-    }
-  ]
+  "link_count": 49,
+  "errors": [],
+  "limitations": "Validate this skill pack without Git or a machine-specific skill installation.\n\nScope: skills/*/SKILL.md, skills/*/references/**/*.md, root *.md,\nvalidation/**/*.md, and validation/behavior-cases.json (fingerprint only).\nMarkdown support is deliberately limited to inline links with simple destinations\n(including <angle-bracket paths> and optional titles), plus backticked references/\npaths inside skills only. Fenced code is ignored. Reference-style links, HTML, balanced parentheses,\nanchors and external URL availability are not validated. This is not a CommonMark\nparser, behavioral evaluation, or client-import test.",
+  "fingerprint": "7e8fa7d080660f1275f0d1bb13a18117195ef15a1f8452d3dc0923e7d7966386",
+  "ok": true
 }

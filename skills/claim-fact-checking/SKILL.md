@@ -2,8 +2,6 @@
 name: claim-fact-checking
 description: 把一段说法拆为可验证事实、推论与价值判断，核查来源及推理，给出可信范围和更稳健的改写。用于“核查这段话”“这个结论可信吗”“检查数据和因果关系”等请求。
 metadata:
-  source: "https://www.douyin.com/user/self?modal_id=7676403117654641926"
-  source-prompt: "05"
   language: "zh-CN"
 ---
 
