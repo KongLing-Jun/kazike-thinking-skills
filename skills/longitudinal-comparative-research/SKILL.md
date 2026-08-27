@@ -2,8 +2,6 @@
 name: longitudinal-comparative-research
 description: 结合历史演变和同维度横向比较，研究产品、公司、人物、技术、行业或事件，并提出有条件的未来情景。用于“纵横分析”“发展脉络加竞品差异”“做一份可追溯的深度研究”等请求。
 metadata:
-  source: "https://www.douyin.com/user/self?modal_id=7676403117654641926"
-  source-prompt: "04"
   language: "zh-CN"
 ---
 

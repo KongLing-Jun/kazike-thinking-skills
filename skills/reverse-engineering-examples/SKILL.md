@@ -2,8 +2,6 @@
 name: reverse-engineering-examples
 description: 拆解用户提供的优秀作品、产品页面、方案或流程，找出有效结构、关键选择和可迁移规律，并转成操作清单与练习。用于“拆解这个案例”“为什么它做得好”“我想学它的方法”这类范例学习请求。
 metadata:
-  source: "https://www.douyin.com/user/self?modal_id=7676403117654641926"
-  source-prompt: "03"
   language: "zh-CN"
 ---
 

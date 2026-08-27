@@ -2,8 +2,6 @@
 name: two-sided-steelmanning
 description: 为两种备选方向分别构建最有力的论证，找出真实分歧，再通过一个关键问题形成有条件的判断。用于“两个选项都合理”“双向钢人论证”“先把两边说透再帮我选”等决策请求。
 metadata:
-  source: "https://www.douyin.com/user/self?modal_id=7676403117654641926"
-  source-prompt: "09"
   language: "zh-CN"
 ---
 

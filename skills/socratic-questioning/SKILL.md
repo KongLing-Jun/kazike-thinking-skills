@@ -2,8 +2,6 @@
 name: socratic-questioning
 description: 通过逐轮苏格拉底式追问，把含混困惑变成可验证、可行动的问题。用于用户说“帮我问清楚问题”“先别给建议”“我不知道自己真正卡在哪里”时；不用于已经明确需求的直接执行任务。
 metadata:
-  source: "https://www.douyin.com/user/self?modal_id=7676403117654641926"
-  source-prompt: "01"
   language: "zh-CN"
 ---
 

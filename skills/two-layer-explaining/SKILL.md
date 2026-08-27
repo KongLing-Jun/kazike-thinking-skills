@@ -2,8 +2,6 @@
 name: two-layer-explaining
 description: 用通俗解释和准确专业机制两层讲清同一概念，并对照术语、标明类比边界、检查理解。用于用户要求“小白版加专业版”“既听懂又理解原理”或需要双层解释陌生概念时。
 metadata:
-  source: "https://www.douyin.com/user/self?modal_id=7676403117654641926"
-  source-prompt: "02"
   language: "zh-CN"
 ---
 

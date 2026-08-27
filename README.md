@@ -153,13 +153,16 @@ $socratic-questioning 我总想换工作，但不确定自己真正不满意的�
 │   │   ├── SKILL.md
 │   │   └── references/
 │   └── …
-├── validation/                    # 初始版本的校验结果和行为抽查记录
+├── scripts/validate_skills.py      # 维护者使用的结构与记录校验
+├── tests/                         # 校验器的隔离回归测试
+├── requirements-dev.txt           # 仅验证时需要的开发依赖
+├── validation/                    # 复跑说明、用例、结果及历史记录
 ├── 内容提炼与来源.md
 ├── 使用说明.md
 └── 验证报告.md
 ```
 
-每个技能的 `SKILL.md` 使用 YAML 定义 `name`、`description` 和来源元数据，正文描述实际流程。较长的条件性说明放在 `references/`，由入口按需引用。文件结构参照 [Agent Skills 规范](https://agentskills.io/specification)。
+每个技能的 `SKILL.md` 使用 YAML 定义 `name`、`description` 和语言元数据，正文描述实际流程。较长的条件性说明放在 `references/`，由入口按需引用。文件结构参照 [Agent Skills 规范](https://agentskills.io/specification)。
 
 ## 运行条件与边界
 
@@ -172,19 +175,20 @@ $socratic-questioning 我总想换工作，但不确定自己真正不满意的�
 
 ## 验证状态
 
-初始技能版本于 **2026-08-28** 完成以下检查：
+**2026-08-28** 完成以下检查，结构结果与本轮行为记录均保存了被测文件哈希：
 
 | 检查 | 结果与范围 |
 | --- | --- |
-| 结构校验 | 12/12 通过：元数据、名称、目录对应、引用文件和来源编号 |
-| 行为抽查 | 六个场景生成了实际回答，并对其中两项窄修订进行了复测 |
-| 对话深度 | 交互类主要覆盖首轮，未完成所有多轮访谈和最终报告验证 |
+| 结构校验 | 12/12 通过；仓库内校验器检查元数据、目录对应、本地引用及内容指纹 |
+| 校验器回归 | 隔离测试覆盖错误输入、引用越界、记录过期和输出保护，详见验证报告 |
+| 行为抽查 | 本轮7个场景、15轮实际回答，包含描述级路由正负例；主代理逐项审阅通过 |
+| 对话深度 | 覆盖提前停止、跳过、矛盾信息、确认后建议、暂定优势说明和人生原型；未覆盖全部长访谈 |
 | 客户端兼容性 | 安装路径依据官方文档；尚未实测本包在各客户端的导入、自动触发 |
 | 跨模型效果 | 未完成 Claude Haiku、Sonnet、Opus 等跨模型测试 |
 
-这里的校验通过不等于效果认证，也不能证明模型在所有任务上都会严格遵守流程。详见 [验证报告](验证报告.md)、[结构结果](validation/structural-validation.json)、[交互抽查](validation/interactive-forward-test.md) 和 [分析抽查](validation/analysis-forward-test.md)。
+这里的校验通过不等于效果认证，也不能证明模型在所有任务上都会严格遵守流程。详见 [验证报告](验证报告.md)、[结构结果](validation/structural-validation.json) 和 [本轮行为结果](validation/behavior-results.json)。具体模型版本未由本轮执行接口暴露，记录为未知，不将结果外推到其他模型。
 
-`validation/` 保存的是该版本的记录，不是随修改自动更新的 CI 结果。本仓库当前未附带自动化测试运行器；修改技能后应重新检查并记录验证范围。
+维护者可按 [验证与复跑说明](validation/README.md) 运行仓库内校验器、回归测试和记录新鲜度检查。自动脚本不会调用模型；行为用例需要逐轮重放并审阅实际回答。`validation/` 中的历史记录不等于当前版本通过，也不是自动更新的 CI 结果。
 
 ## 参与改进
 
@@ -202,8 +206,8 @@ $socratic-questioning 我总想换工作，但不确定自己真正不满意的�
 
 ## 来源与许可
 
-方法来源：**数字生命卡兹克**的抖音图文《强烈建议所有人试一下这些提示词》，共16页、12个方法。[查看原帖](https://www.douyin.com/user/self?from_tab_name=main&modal_id=7676403117654641926&showTab=like)。
+方法整理自 **数字生命卡兹克**分享的思考与自我探索方法。
 
-本项目对内容进行了结构化提炼和工作流改写，补充了证据限制、用户授权和交互边界。没有附带原始图文，也不宣称获得原作者背书。逐项对应与改写说明见 [内容提炼与来源](内容提炼与来源.md)。
+本项目对内容进行了结构化提炼和工作流改写，补充了证据限制、用户授权和交互边界，不宣称获得原作者背书。方法概览与改写说明见 [内容提炼与来源](内容提炼与来源.md)。
 
 **当前许可状态：尚未添加 `LICENSE`，不宣称采用 MIT、Apache-2.0 或其他开源许可证。** 公开仓库与明确授予开源许可是不同事项；维护者应先确认第三方来源的使用边界，再为有权授权的内容确定许可证并更新本节。原始材料的权利不因本仓库的整理而转移。参考 [GitHub 关于仓库许可的说明](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)。
